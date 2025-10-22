@@ -1,0 +1,33 @@
+
+
+The sender's display name is “Microsoft 365 Support” but the actual email is “support@office-365-notifications[.]com,” which is not an official Microsoft domain. Attackers use lookalike domains to deceive recipients.
+
+Without seeing the raw headers, a mismatched display name and domain is an immediate red flag.
+
+The “Recover account” button likely leads to a phishing website designed to steal credentials.
+
+The email claims someone accessed your account and urges immediate recovery with “We think someone else has accessed… recover your account. This panic-inducing tone pressures users to act quickly without thinking.
+
+The email appears mostly professional, but phrases like “We think that someone else has accessed…” are generic and impersonal, which is common in phishing attempts. The email uses the full address ("john[.]doe@mybusiness[.]com") instead of your name, indicating a bulk-sent message.
+
+The email avoids obvious spelling mistakes, but its grammar is impersonal and slightly awkward (e.g., “We think that someone else has accessed…” could be phrased more formally by a real company).
+
+summary:
+
+ 1.Display name spoofing: “Microsoft 365 Support” with a suspicious email (support@office-365-notifications[.]com).
+
+ 2.Generic, impersonal salutation using the email address, not the actual name.
+
+ 3.Urgent language warning of account compromise, pressuring users to take action (“recover account”).
+
+ 4.Suspicious links presented as buttons, likely leading to a phishing website.
+
+ 5.No actual personalization or context; the email could be sent to any user.
+
+ 6.Slightly odd phrasing and grammar lacking the polish of authentic communications.
+
+ 7.Domain and sender mismatch: The sender domain is not associated with Microsoft.
+
+ 8.The body’s focus is on fear, uncertainty, and immediate action.
+
+​
