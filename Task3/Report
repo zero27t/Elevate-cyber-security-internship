@@ -1,1 +1,14 @@
+Vulnerability Scan Report
+Scan Summary
+Tool Used: Nessus Essentials
+Target: Local Machine
+Total Vulnerabilities Detected: 23 (from 1 host)
+Severity Levels:
+Total:23
+Medium: 1
+Info: 22
+
+Vulnerability             |  Severity  |  Plugin ID  |  Affected Area         |  Description                                                                        |  Solution Recommendation                                                                                                                                            
+--------------------------+------------+-------------+------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SMB Signing not required  |  Medium    |  57608      |  Microsoft SMB Server  |  SMB message signing is not enforced, allowing possible man-in-the-middle attacks.  |  Enforce message signing via the policyMicrosoft network server: Digitally sign communications (always)(for Windows) or enableserver signingin Samba configurations.
 
