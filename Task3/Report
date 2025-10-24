@@ -12,3 +12,7 @@ Vulnerability             |  Severity  |  Plugin ID  |  Affected Area         | 
 --------------------------+------------+-------------+------------------------+-------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SMB Signing not required  |  Medium    |  57608      |  Microsoft SMB Server  |  SMB message signing is not enforced, allowing possible man-in-the-middle attacks.  |  Enforce message signing via the policyMicrosoft network server: Digitally sign communications (always)(for Windows) or enableserver signingin Samba configurations.
 
+Recommendation:
+Enable/enforce SMB signing on your system:
+For Windows: Update the local or group policy (Microsoft network server: Digitally sign communications (always)).
+
