@@ -1,0 +1,21 @@
+Windows Firewall (GUI Steps)
+Open Firewall Settings
+    Start → Search “Windows Defender Firewall” → Open.
+View Rules
+    Click “Advanced settings” → “Inbound Rules”/“Outbound Rules”.
+Add Rule to Block Port 23
+   “Inbound Rules” → “New Rule...” → Select “Port” → Choose “TCP” → Enter “23” → Select “Block the connection” → Apply to all profiles → Name the rule (“Block Telnet Port 23”) → Finish.
+Test Port Block
+   Enable Telnet:
+     → Control Panel → Programs and Features → Turn Windows features on/off → Tick “Telnet Client” → OK.
+  Command Prompt: Run telnet localhost 23.
+Remove the Rule
+  “Inbound Rules” → Right-click your rule → “Delete” or “Disable”.
+
+
+How Firewalls Work
+Packet Inspection: Firewalls examine packet headers for details such as source and destination IP address, port number, and protocol type (TCP, UDP, etc.).
+Rule Evaluation: Each packet’s information is compared against predefined filtering rules (Access Control Lists). These rules specify what types of traffic are permitted or denied.
+Access Control Decision: If a match is found for an allowed rule, the packet passes through the firewall; if it matches a blocked rule, the firewall denies it.
+Default Action: If a packet does not match any rules, the firewall applies a default behavior (commonly blocking the packet for added security).
+Logging/Monitoring: Most firewalls log their decisions and generate alerts for suspicious activity, helping administrators audit and detect threats.
