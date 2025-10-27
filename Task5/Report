@@ -1,0 +1,39 @@
+Protocol       |  Packets  |  % Packets  |  Bytes  |  % Bytes
+---------------+-----------+-------------+---------+---------
+IPv4           |  53       |  89.8       |  1060   |  2.9    
+IPv6           |  6        |  10.2       |  240    |  0.7    
+HTTP           |  59       |  100.0      |  35174  |  97.1   
+VLAN (802.1Q)  |  22       |  37.3       |  88     |  0.2    
+
+The capture included both IPv4 and IPv6 web traffic, mostly over TCP, and several HTTP requests showing browsing activity.
+Raw data and VLAN-tagged traffic were also observed, indicating a possibly segmented network.
+The percentage of traffic by protocol suggests most of your network’s visible data is routine web and TCP communication.
+
+
+
+Protocol  |  Packets  |  % Packets  |  Bytes  |  % Bytes
+----------+-----------+-------------+---------+---------
+IPv6      |  125      |  100.0      |  5000   |  23.2   
+UDP       |  125      |  100.0      |  1000   |  4.6    
+DNS       |  125      |  100.0      |  13768  |  64.0   
+
+The entire capture was dominated by DNS traffic over IPv6 and UDP, possibly because the system was resolving multiple domain names or due to a DNS-heavy operation (like browsing several new websites or flushing DNS cache and re-resolving).
+No TCP or HTTP traffic was captured here, in contrast to your previous capture, indicating a session focused just on the name resolution phase.
+This could indicate either a network setup or diagnostic session, where almost all communication was DNS-related, which is not common during typical browsing but expected in troubleshooting or at session startup.
+
+
+
+
+
+Protocol         |  Packets  |  % Packets  |  Bytes          |  % Bytes
+-----------------+-----------+-------------+-----------------+---------
+IPv6             |  1133     |  14.3       |  45320          |  0.2    
+IPv4             |  6787     |  85.7       |  135740         |  0.7    
+TLS (IPv6 + 4)   |  245+199  |  2.5+2.5    |  241332+227819  |  1.2    
+HTTP (IPv4 + 6)  |  53+6     |  0.7+0.1    |  35174+3039     |  0.2    
+VLAN             |  4195     |  53         |  17110          |  0.1    
+Data (IPv4)      |  24       |  0.3        |  17946551       |  90     
+
+The analyzed capture shows a complex, high-traffic network session, dominated by secure (TLS) communications, diverse IP protocol usage (IPv4 and IPv6), and significant VLAN segmentation.
+Large “Data” packet streams under IPv4 indicate either high-volume transfers or specialized application activity.
+This detailed breakdown is typical of enterprise or institutional network environments, where encryption, segmentation, and protocol diversity illustrate advanced network practices.
