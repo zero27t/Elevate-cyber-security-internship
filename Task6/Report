@@ -1,0 +1,54 @@
+Simple Password (task6.1-simple-password.jpg)
+ Score: 10% (Very Weak).
+ Only lowercase letters are used, making it easy to guess with dictionary attacks or brute force, even if it’s 8 characters long.
+ Deductions due to letters only and a long sequence of consecutive lowercase letters.
+ Feedback: Always mix uppercase, numbers, and symbols. Length alone is not enough for strength. This password is highly vulnerable and must be avoided.
+
+Medium Complexity Password (Task6.2-medium-level.jpg)
+ Score: 69% (Strong).
+ Includes uppercase, lowercase, numbers; 9 characters long.
+ No symbols are present, which lowers its complexity slightly.
+ Minor deductions for some consecutive lowercase letters and a few repeat characters.
+ Feedback: This password is quite strong for basic accounts. Adding symbols and increasing length further would make it even more secure. It meets most minimum requirements and resists basic brute force and dictionary attacks much better.
+
+Highly Complex Password (Task6.3-highly-complex.jpg)
+ Score: 100% (Very Strong).
+ Uses uppercase, lowercase, numbers, symbols; 12 characters long.
+ Few repeat and consecutive characters, no common patterns.
+ Maximum points for length and character variety.
+ Feedback: This example is excellent and highly resistant to brute force, dictionary, and hybrid attacks. It follows all best practices for complexity and diversity and should be used for sensitive and important accounts.
+
+Best Practices for Strong Passwords
+ Passwords should be at least 16 characters long for strong security.
+ Use a mix of uppercase letters, lowercase letters, numbers, and special symbols.
+ Avoid dictionary words, common phrases, or personal info.
+ Make each password unique to prevent compromise across accounts.
+ Consider passphrases made of random words for memorability.
+ Use password managers to generate, store, and manage strong, unique passwords.
+
+
+Common Password Attacks
+ Brute Force Attacks: Trying every possible combination systematically. Longer and more complex passwords drastically increase the time required to crack.
+ Dictionary Attacks: Using precompiled lists of common passwords, dictionary words, or leaked passwords. Avoiding dictionary words mitigates this threat.
+ Hybrid and Reverse brute force attacks combine methods to increase success rates.
+ Attackers use automated tools to test thousands or millions of combinations quickly, so weak or reused passwords are vulnerable.
+
+    ​
+
+How Password Complexity Affects Security
+ Increasing length of passwords exponentially increases the number of combinations, making brute force attempts take far longer.
+ Using a variety of character types (lowercase, uppercase, digits, symbols) increases possible combinations, making guessing harder.
+ Unpredictability (no common phrases or patterns) reduces the effectiveness of dictionary and pattern-based attacks.
+ Complex passwords balance strength with memorability; overly complex but hard-to-remember passwords can lead to insecure practices such as writing them down or reusing.
+ Combining complexity with practices like multi-factor authentication and regular password changes strengthens overall account security.
+
+    ​
+
+Tips Learned
+ Use long passwords or passphrases (at least 16 characters).
+ Include mixed character types.
+ Make passwords unique per account.
+ Avoid common words and predictable patterns.
+ Use password managers.
+ Understand attacks to appreciate password complexity’s role in defense.
+   
