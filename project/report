@@ -1,1 +1,41 @@
 
+
+***
+
+# Report: Overview of Digital Steganography Tools
+
+### **1. Introduction**
+Steganography is the technique of hiding secret data within an ordinary, non-secret file or message in order to avoid detection. Unlike cryptography, which obscures the *content* of a message, steganography obscures the *existence* of the message. The resulting file (e.g., an image or audio track) appears normal to the human eye or ear, but contains hidden information that can be extracted with the correct software.
+
+### **2. Common Steganography Tools**
+There are various tools available depending on the operating system and the level of security required.
+
+* **Steghide**
+    * **Type:** Command Line Interface (CLI).
+    * **Function:** Hides data in image (BMP, JPG) and audio (WAV, AU) files.
+    * **Features:** It uses a graph-theoretic approach to embed data, meaning it does not change the file size significantly. It also supports encryption (Rijndael) and compression of the embedded data.
+    
+* **OpenStego**
+    * **Type:** Graphical User Interface (GUI).
+    * **Function:** General-purpose steganography and digital watermarking.
+    * **Features:** Open-source and Java-based. It offers strong encryption and is user-friendly for those who prefer a visual interface over command-line codes. It is widely used for digital watermarking to protect copyright.
+
+* **QuickStego**
+    * **Type:** Graphical User Interface (GUI).
+    * **Function:** Basic text hiding in images.
+    * **Features:** A lightweight tool designed for speed. It allows users to open an image, type text, and save the result. It is less secure than Steghide but faster for casual use.
+
+### **3. Technical Mechanism: Least Significant Bit (LSB)**
+The most common method used by these tools is **Least Significant Bit (LSB) substitution**.
+
+* Digital images are made of pixels, each represented by binary numbers (0s and 1s).
+* The "least significant bit" is the last digit in the binary sequence. Changing this bit changes the color of the pixel so slightly that the human eye cannot detect the difference.
+* Steganography tools replace these last bits with the bits of the secret message.
+
+### **4. Applications**
+* **Digital Watermarking:** Embedding copyright information into images or audio to prove ownership without altering the visual quality of the work.
+* **Secure Communication:** Transmitting sensitive data in hostile environments where encrypted messages might draw suspicion.
+* **Data Integrity:** Embedding metadata or checksums within a file to ensure it hasn't been tampered with.
+
+### **5. Conclusion**
+Steganography tools are essential for digital privacy and copyright protection. While basic tools like QuickStego offer ease of use, advanced tools like Steghide provide necessary encryption for secure data transfer. As detection methods (steganalysis) improve, these tools continue to evolve to make hidden data increasingly difficult to detect.
